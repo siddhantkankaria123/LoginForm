@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LOGIN FORM</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons.flaticon.com/png/512/3293/premium/3293466.png?token=exp=1655968102~hmac=9053080b40975730b0a675b045e23f31"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="form.js"></script>
+  </head>
+  <body>
+    <div class="main-container" id="mainc">
+      <button onclick="dark()" id="darkmode" class="bulb_button">
+        <i class="fa-solid fa-moon" id="bulb"></i>
+      </button>
+      <div class="container">
+        <div class="image">
+          <img
+            src="woman-filling-form-character-sitting-260nw-2084799685.webp"
+            alt=""
+          />
+        </div>
+        <div class="section-two">
+          <h1>LOGIN</h1>
+          <form action="" onsubmit="return validateform()">
+            <label for="username" class="uspwd">Username</label>
+
+            <input type="text" id="username" class="lgn-form" />
+
+            <p id="user_error" class="error"></p>
+
+            <label for="pswrd" class="uspwd">Password</label>
+
+            <input type="password" id="pswrd" class="lgn-form" />
+            <p id="passwrod_error" class="error"></p>
+
+            <div class="uspwd"><button id="logn">Login</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Lato", sans-serif;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #526d82;
+  /* color: white; */
+}
+#darkmode {
+  cursor: pointer;
+}
+.dark-mode {
+  background-color: black;
+  color: black;
+}
+.dark-mode .container {
+  background-color: black;
+  color: white;
+}
+.dark-mode h1 {
+  /* background-color: black; */
+  color: white;
+}
+.container {
+  height: 70vh;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #ffff;
+  display: flex;
+  /* overflow: hidden; */
+  /* text-align: center; */
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  /* box-shadow: 0 0 20px rgba(0, 139, 253, 0.25); */
+}
+.image {
+  height: 100%;
+  width: 50%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-two {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30%;
+}
+
+h1 {
+  letter-spacing: 2px;
+  width: fit-content;
+  /* background-color: #0079FF; */
+  color: black;
+  padding: 5%;
+  /* border-radius: 35px; */
+  margin-top: 50%;
+}
+.uspwd {
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+.lgn-form {
+  height: 40px;
+  width: 90%;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  border-radius: 25px;
+}
+.error {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-top: 5%;
+}
+#logn {
+  background-color: #03c988;
+  width: 90%;
+  color: white;
+  padding: 4%;
+  margin-top: 8%;
+  font-size: 1.5rem;
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.bulb_button {
+  margin-bottom: 600px;
+}
+#bulb {
+  padding: 3px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .main-container {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Lato", sans-serif;
+  }
+  .container {
+    height: 90vh;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    height: 70%;
+    width: 100%;
+  }
+  .section-two {
+    margin-left: 20%;
+    height: 30%;
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: black;
+    padding: 1%;
+    margin-top: 45%;
+    margin-bottom: 15%;
+  }
+  .uspwd {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  .lgn-form {
+    font-size: 1.4rem;
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 25px;
+  }
+  .error {
+    color: red;
+    font-size: 0.99rem;
+    font-weight: bolder;
+    margin-top: 2%;
+  }
+  #logn {
+    background-color: #03c988;
+    width: 50%;
+    color: white;
+    padding: 3%;
+
+    font-size: 1rem;
+
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
